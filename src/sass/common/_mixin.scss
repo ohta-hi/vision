@@ -1,0 +1,28 @@
+// メディアクエリ
+$breakpoints: (
+    's': 'screen and (max-width:576px)',
+    'm': 'screen and (min-width: 577px)',
+    'l': 'screen and (min-width: 768px)',
+    'xl': 'screen and (min-width: 992px)',
+    'xxl': 'screen and (min-width: 1200px)',
+) !default;
+
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+// @mixin title {}
+
+// color
+$black: #3E4D64;
+$white: #fff;
+$green: #69A673;
+
+// コンテンツ幅
+@mixin container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
