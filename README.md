@@ -1,2 +1,2 @@
-# vision
+# visions
 vision用のリポジトリです
