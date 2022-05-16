@@ -1,78 +1,5 @@
 @charset "UTF-8";
 
-/*
-===== NOTES ========
-
-	last-updated: 2022.3.24
-
-	+1: Element
-    +1-1: Element responsive
-	+2: Header Area
-    +2-1: Header Area responsive
-	+3: main Area
-    +3-1: main Area responsive
-	+4: service page
-	+4-1:service page responsive
-	
-
-====================
-*/
-/* ====================================================
-	+1: Element
- ==================================================== */
-
-* {
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 16px;
-    font-family: sans-serif;
-    color: #000;
-}
-
-p {
-    font-size: 1rem;
-}
-
-a {
-    color: #000;
-    text-decoration: none;
-}
-
-li{
-    list-style: none;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-.pc{
-    display: inline-block;
-}
-
-.sp{
-display: none;
-}
-
-/* ====================================================
-	+1-1: Element responsive
- ==================================================== */
-
-@media screen and (max-width:599px) {
-
-    .pc{
-        display: none;
-    }
-        
-    .sp{
-        display: inline-block;
-    }
-
-}
-
 /* ====================================================
 	+2: Header Area
  ==================================================== */
@@ -90,17 +17,17 @@ display: none;
     display: none;
 }
 
-.gnav-lists {
+.gnav__lists {
     display: flex;
     justify-content: flex-end;
     flex: 1;
 }
 
-.gnav-lists li:not(:last-child) {
+.gnav__lists li:not(:last-child) {
     margin-right: 50px;
 }
 
-.gnav-lists li a {
+.gnav__lists li a {
     display: flex;
     flex-direction: column;
     color: #111;
@@ -108,7 +35,7 @@ display: none;
     line-height: 1.6;
 }
 
-.gnav-lists  li a span {
+.gnav__lists  li a span {
     color: #5b8f8f;
     font-size: 13px;
 }

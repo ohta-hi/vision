@@ -4,13 +4,13 @@
 	last-updated: 2022.3.24
 
 	+1: Element
-    +1-1: Element responsive
+    +1-1: Element Tablet+PC
 	+2: Header Area
-    +2-1: Header Area responsive
+    +2-1: Header Area Tablet+PC
 	+3: main Area
-    +3-1: main Area responsive
+    +3-1: main Area Tablet+PC
 	+4: service page
-	+4-1:service page responsive
+	+4-1:service page Tablet+PC
 
 
 ====================
@@ -47,11 +47,11 @@ img {
   height: auto;
 }
 
-.pc {
+.pc-content {
   display: inline-block;
 }
 
-.sp {
+.sp-content {
   display: none;
 }
 
@@ -89,7 +89,7 @@ img {
   display: none;
 }
 
-.gnav-lists {
+.gnav__lists {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,11 +101,11 @@ img {
           flex: 1;
 }
 
-.gnav-lists li:not(:last-child) {
+.gnav__lists li:not(:last-child) {
   margin-right: 50px;
 }
 
-.gnav-lists li a {
+.gnav__lists li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,7 +118,7 @@ img {
   line-height: 1.6;
 }
 
-.gnav-lists li a span {
+.gnav__lists li a span {
   color: #5b8f8f;
   font-size: 13px;
 }

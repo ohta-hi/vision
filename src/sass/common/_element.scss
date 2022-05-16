@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/*
+===== NOTES ========
+
+	last-updated: 2022.3.24
+
+	+1: Element
+    +1-1: Element Tablet+PC
+	+2: Header Area
+    +2-1: Header Area Tablet+PC
+	+3: main Area
+    +3-1: main Area Tablet+PC
+	+4: service page
+	+4-1:service page Tablet+PC
+	
+
+====================
+*/
+/* ====================================================
+	+1: Element
+ ==================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #000;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.pc-content{
+    display: inline-block;
+}
+
+.sp-content{
+display: none;
+}
+
+/* ====================================================
+	+1-1: Element responsive
+ ==================================================== */
+
+@media screen and (max-width:599px) {
+
+    .pc{
+        display: none;
+    }
+        
+    .sp{
+        display: inline-block;
+    }
+
+}
