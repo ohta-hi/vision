@@ -20,13 +20,16 @@
 /* ====================================================
 	+1: Element
  ==================================================== */
+@use "mixin"as m;
+// @include m.mq(sp) {}
 
 * {
     box-sizing: border-box;
 }
 
 html {
-    font-family: sans-serif;
+    font-family: m.$ja;
+    font-weight: 400;
     color: #000;
 }
 
@@ -39,7 +42,7 @@ a {
     text-decoration: none;
 }
 
-li{
+li {
     list-style: none;
 }
 
@@ -48,11 +51,11 @@ img {
     height: auto;
 }
 
-.pc-content{
+.pc-content {
     display: none;
 }
-    
-.sp-content{
+
+.sp-content {
     display: inline-block;
 }
 
@@ -62,11 +65,37 @@ img {
 
 @media screen and (min-width:769px) {
 
-    .pc-content{
+    .pc-content {
         display: inline-block;
     }
-    
-    .sp-content{
+
+    .sp-content {
         display: none;
     }
+}
+
+
+// 基本のボタン-緑
+a.btn {
+    padding: 22px 64px 22px 25px;
+    line-height: 1;
+    color: m.$white;
+    font-family: m.$en;
+    font-weight: 600;
+    background: m.$green;
+    box-shadow: 0px 1px 7px #C4C4C4;
+    border-radius: 50px;
+    position: relative;
+}
+
+a.btn::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid m.$white;
+    border-right: 2px solid m.$white;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    right: 26px;
+    top: 50%;
 }

@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Sawarabi+Gothic&display=swap"
+        rel="stylesheet">
     <title>Visions-トップページ</title>
 </head>
+
 <body class="home">
     <!-- ヘッダー -->
     <header class="header">
         <div class="header__wrap">
-            <div class="logo"><a href="/"><img src="img/logo.png" alt="Visions"></a></div>
+            <h1 class="header__logo"><a href="/"><img src="img/logo.png" alt="Visions"></a></h1>
             <div class="gnav">
-                <button type="button" id="js-hamburger" class="button hamburger" aria-controls="js-glabal-menu" aria-expanded="false" area-label="メニューを開閉する">
+                <button type="button" id="js-hamburger" class="button hamburger" aria-controls="js-glabal-menu"
+                    aria-expanded="false" area-label="メニューを開閉する">
                     <span class="hamburger__line">
                     </span>
                 </button>
                 <div class="sp-global-menu" id="js-global-menu" area-hidden="true">
                     <ul class="gnav__lists">
-                        <li class="gnav__item"><a href="/" class="gnav__link _current"><span class="pc-content">News</span>ニュース</a></li>
-                        <li class="gnav__item"><a href="" class="gnav__link"><span class="pc-content">Service</span>事業紹介</a></li>
-                        <li class="gnav__item"><a href="#" class="gnav__link"><span class="pc-content">Company</span>会社概要</a></li>
-                        <li class="gnav__item"><a href="#" class="gnav__link"><span class="pc-content">Recruit</span>採用情報</a></li>
-                        <li class="gnav__item"><a href="#" class="gnav__link"><span class="pc-content">Contact</span>お問い合わせ</a></li>
-                        <li class="gnav__item"><a href="#" class="gnav__link"><span class="pc-content">ONLINE STORE</span>ONLINE STORE</a></li>
+                        <li class="gnav__item"><a href="/" class="gnav__link _current">ニュース</a></li>
+                        <li class="gnav__item"><a href="" class="gnav__link">事業紹介</a></li>
+                        <li class="gnav__item"><a href="#" class="gnav__link">会社概要</a></li>
+                        <li class="gnav__item"><a href="#" class="gnav__link">採用情報</a></li>
+                        <li class="gnav__item"><a href="#" class="gnav__link">お問い合わせ</a></li>
+                        <li class="gnav__item"><a href="#" class="gnav__link btn ">ONLINE STORE</a></li>
                     </ul>
                 </div>
             </div>
@@ -37,4 +45,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
