@@ -1,0 +1,119 @@
+@use "../common/mixin"as m;
+// @include r.mq(sp) {}
+
+/* ====================================================
+	+3: Fv Area
+ ==================================================== */
+.fv {
+    padding-top: 40px;
+    height: 480px;
+}
+
+.fv__bg{
+    height: 100%;
+    background: url(../../img/leaf.png), url(../../img/fv.jpeg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    background-size: contain;
+}
+
+.fv__wrap{
+    position: relative;
+}
+
+.fv__txtWrap{
+    position: absolute;
+    top: 87px;
+    left: 22.6%;
+}
+
+.fv__txt {
+    font-size: 2rem;
+    line-height: 1.45;
+}
+
+.fv__subTxt {
+    font-size: 1.25rem;
+    margin-top: 10px;
+}
+
+.fv__border{
+
+    &::after{
+        background-color: m.$green;
+        content: "";
+        display: inline-block;
+        width: 50%;
+        height: 4px;
+        position: absolute;
+        top: 235px;
+        left: 0;
+    }
+}
+
+/* ====================================================
+	+2-1: Fv Area Tablet+PC
+ ==================================================== */
+@media screen and (min-width:577px) and (max-width:768px) {
+    .fv .fv__border{
+
+        &::after{
+            top: 270px;
+        }
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .fv{
+        padding-top: 80px;
+    }
+
+    .fv__txtWrap{
+        top: 130px;
+    }
+
+    .fv__border{
+
+        &::after{
+            top: 230px;
+        }
+    }
+}
+
+@include m.mq(xl) {
+
+    .fv{
+        padding-top: 80px;
+        height: 490px;
+    }
+
+    .fv__txtWrap{
+        top: 165px;
+        left: 15.4%;
+    
+        &::after{
+            height: 10px;
+            bottom: -56px;
+            left: -15.4%;
+        }
+    }
+
+    .fv__txt {
+        font-size: 3.375rem;
+        line-height: 1.48;
+    }
+
+    .fv__subTxt {
+        font-size: 1.56rem;
+        margin-top: 5px;
+    }
+
+    .fv__border{
+
+        &::after{
+            width: 474px;
+            height: 10px;
+            top: 342px;
+        }
+    }
+}

@@ -123,6 +123,13 @@
         transform: rotate(-45deg);
     }
 
+    .header{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
     .header__wrap {
         height: 40px;
         display: flex;
@@ -153,12 +160,28 @@
         line-height: 1.47;
     }
 
+    .gnav__link.btn {
+        color: m.$black;
+        border: 1px solid m.$black;
+        padding: 10px 44px 10px 25px;
+        display: inline-block;
+        margin-top: 15px;
+        background: transparent;
+        box-shadow: none;
+
+        &::after {
+            border-top: 2px solid m.$black;
+            border-right: 2px solid m.$black;
+            right: 22px;
+        }
+    }
+
 }
 
 /* ====================================================
 	+2-1: Header Area Tablet+PC
  ==================================================== */
-@media screen and (min-width:577px) and ( max-width:992px)  {
+@media screen and (min-width:577px) and (max-width:992px) {
     .header__wrap {
         height: 80px;
         display: flex;
@@ -173,6 +196,14 @@
 }
 
 @include m.mq(xl) {
+
+    .header{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
     .header__wrap {
         height: 80px;
         padding: 0 20px;
@@ -206,13 +237,21 @@
     .gnav__link {
         color: m.$black;
         text-align: center;
-        font-size: 1rem;
+        font-size: clamp(14px, 0.56vw, 16px);
         line-height: 1.47;
     }
 
     .gnav__link .pc-content {
         color: m.$green;
         font-size: 13px;
+    }
+
+    .gnav__link.btn {
+        padding: 10px 57px 10px 30px;
+
+        &::after {
+            right: 27px;
+        }
     }
 
 }

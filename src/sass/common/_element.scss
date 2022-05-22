@@ -40,6 +40,10 @@ p {
 a {
     color: #000;
     text-decoration: none;
+
+    &:hover{
+        opacity: 0.7;
+    }
 }
 
 li {
